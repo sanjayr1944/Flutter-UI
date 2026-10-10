@@ -22,7 +22,7 @@ class ButtonScreen extends StatelessWidget {
               onPressed:
                   () //
                   {
-                    print("Elevated Button Triggered");
+                    //print("Elevated Button Triggered");
 
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(

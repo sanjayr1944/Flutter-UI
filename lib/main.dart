@@ -1,11 +1,7 @@
-import 'package:demo_test/Buttons/button_screen.dart';
-import 'package:demo_test/Container/my_container.dart';
-import 'package:demo_test/Inputs/textformfield_screen.dart';
-import 'package:demo_test/Screens/login_screen.dart';
-import 'package:demo_test/Text/text_widgets.dart';
+
 import 'package:flutter/material.dart';
 
-import 'images/img.dart';
+import 'Gestures/gestures.dart';
 
 void main()
 {
@@ -19,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyLoginScreen(),
+      home: MyGestureScreen(),
     );
   }
 }
