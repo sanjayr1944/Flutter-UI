@@ -1,10 +1,18 @@
 
 // import 'package:demo_test/OverFlow/overflow.dart';
+import 'package:demo_test/Grid_view/grid_view.dart';
+import 'package:demo_test/List_View/list_view.dart';
+import 'package:demo_test/NavBar/BottomNav/bottomNav.dart';
+import 'package:demo_test/ResposiveDesign/Design/MyLayoutScreen.dart';
+import 'package:demo_test/ResposiveDesign/Design/mobileScreen.dart';
+import 'package:demo_test/ResposiveDesign/MyMediaQuery.dart';
 import 'package:demo_test/Routes/Screens/home_screen.dart';
 import 'package:demo_test/Routes/Screens/settings_screen.dart';
 // import 'package:demo_test/Sheets/bottom_sheet.dart';
 import 'package:flutter/material.dart';
 // import 'Gestures/gestures.dart';
+import 'CustomDialog/myCustomDialog.dart';
+import 'ResposiveDesign/Design/desktopScreen.dart';
 import 'Routes/Screens/profile_screen.dart';
 
 void main()
@@ -17,17 +25,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      //home: BottomSheetScreen(),
-      initialRoute: "/",
-      routes:
-      {
-        "/":(context) =>  HomeScreen(),// initial
-        "/profile":(context) => ProfileScreen(),
-        "/settings":(context) => SettingsScreen(),
-
-      },
+    return MaterialApp
+      (
+      home: MyLayoutScreen(
+          mobileScreen: MobileScreen(),
+          desktopScreen: DesktopScreen()),
     );
   }
 }
