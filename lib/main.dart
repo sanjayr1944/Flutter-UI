@@ -3,11 +3,13 @@
 import 'package:demo_test/Grid_view/grid_view.dart';
 import 'package:demo_test/List_View/list_view.dart';
 import 'package:demo_test/NavBar/BottomNav/bottomNav.dart';
+import 'package:demo_test/Reordering/reordering.dart';
 import 'package:demo_test/ResposiveDesign/Design/MyLayoutScreen.dart';
 import 'package:demo_test/ResposiveDesign/Design/mobileScreen.dart';
 import 'package:demo_test/ResposiveDesign/MyMediaQuery.dart';
 import 'package:demo_test/Routes/Screens/home_screen.dart';
 import 'package:demo_test/Routes/Screens/settings_screen.dart';
+import 'package:demo_test/Swipe/dismissable.dart';
 // import 'package:demo_test/Sheets/bottom_sheet.dart';
 import 'package:flutter/material.dart';
 // import 'Gestures/gestures.dart';
@@ -27,9 +29,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp
       (
-      home: MyLayoutScreen(
-          mobileScreen: MobileScreen(),
-          desktopScreen: DesktopScreen()),
+      debugShowCheckedModeBanner: false,
+      home: DismissableScreen()
     );
   }
 }
