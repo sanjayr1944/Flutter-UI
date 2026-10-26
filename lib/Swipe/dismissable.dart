@@ -148,7 +148,7 @@ class _DismissableScreenState extends State<DismissableScreen> {
                     color: Colors.deepPurpleAccent,),
                     title: Text(task),
                     subtitle: Text("Swipe Right to Archive - Left to Delete"),
-                  )
+                  ),
                 ),
             );
           },

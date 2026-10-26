@@ -2,6 +2,7 @@
 // import 'package:demo_test/OverFlow/overflow.dart';
 import 'package:demo_test/Grid_view/grid_view.dart';
 import 'package:demo_test/List_View/list_view.dart';
+import 'package:demo_test/List_View/lv.dart';
 import 'package:demo_test/NavBar/BottomNav/bottomNav.dart';
 import 'package:demo_test/Reordering/reordering.dart';
 import 'package:demo_test/ResposiveDesign/Design/MyLayoutScreen.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp
       (
       debugShowCheckedModeBanner: false,
-      home: DismissableScreen()
+      home: LvScreen()
     );
   }
 }

@@ -5,6 +5,8 @@ class ListViewScreen extends StatelessWidget {
   ListViewScreen({super.key});
 
   final List<String> posts = ["POST 1", "POST 2", "POST 3", "POST 4"];
+  final List<String> story = ["STORY 1", "STORY 2", "STORY 4", "STORY 5"];
+
 
   @override
   Widget build(BuildContext context) {
