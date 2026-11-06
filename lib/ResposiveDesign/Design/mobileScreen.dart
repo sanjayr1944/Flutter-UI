@@ -6,28 +6,64 @@ class MobileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lime,
+      backgroundColor: Colors.black87,
       appBar: AppBar(
-        title: Text("MOBILE"),
+        backgroundColor: Colors.transparent,
+        title: Text("M O B I L E",
+          style: TextStyle(color: Colors.white),),
         centerTitle: true,
       ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container
-                (
-                height: 300,
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 350,
+              //width: 400,
+
+              decoration: BoxDecoration(
                 color: Colors.white,
-
-
-
-              )
-            ],
+                borderRadius: BorderRadius.horizontal(),
+              ),
+              child: Center(child: IconButton(onPressed: (){},
+                  icon: Icon(Icons.play_arrow),
+                color: Colors.red,
+              ),
+              ),
+            ),
           ),
-        ),
+
+          Expanded(child: ListView(
+            padding: EdgeInsets.all(10),
+            children: [
+              Container(
+                height: 250,
+                //width: 100,
+                color: Colors.red,
+              ),
+              SizedBox(height: 10,),
+              Container(
+                height: 250,
+                //width: 100,
+                color: Colors.red,
+              ),
+              SizedBox(height: 10,),
+              Container(
+                height: 250,
+                //width: 100,
+                color: Colors.red,
+              ),
+              SizedBox(height: 10,),
+              Container(
+                height: 250,
+                //width: 100,
+                color: Colors.red,
+              ),
+              SizedBox(height: 10,),
+
+            ],
+          ))
+        ],
       ),
     );
   }

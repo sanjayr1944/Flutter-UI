@@ -65,7 +65,7 @@ class _DismissableScreenState extends State<DismissableScreen> {
       body: tasks.isEmpty ? Center(child: Text("No Tasks"),)
           : ListView.builder(
         itemCount: tasks.length,
-          itemBuilder:(context,index)
+          itemBuilder:(context,index) //?if : else
           {
             final task = tasks[index];
 
