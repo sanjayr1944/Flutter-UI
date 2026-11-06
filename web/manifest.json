@@ -1,11 +1,11 @@
 {
-    "name": "demo_test",
-    "short_name": "demo_test",
+    "name": "note_app_shared_prev",
+    "short_name": "note_app_shared_prev",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Just Flutter Basic Widget",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

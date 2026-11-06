@@ -1,6 +1,6 @@
-# demo_test
+# note_app_shared_prev
 
-Just Flutter Basic Widget
+A new Flutter project.
 
 ## Getting Started
 
