@@ -1,12 +1,5 @@
-import 'package:demo_test/Provider/home.dart';
-import 'package:demo_test/Provider/list_model.dart';
-import 'package:demo_test/Provider/theme_model.dart';
-// import 'package:demo_test/ResposiveDesign/Design/MyLayoutScreen.dart';
-// import 'package:demo_test/ResposiveDesign/Design/mobileScreen.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-// import 'ResposiveDesign/Design/desktopScreen.dart';
-import 'constants/theme/app_theme.dart';
+import 'screens/product_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,27 +10,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // return MaterialApp(
-    //   home: MyLayoutScreen(
-    //       mobileScreen: MobileScreen(),
-    //       desktopScreen: DesktopScreen()),
-    // );
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (context) => CounterModel()),
-        ChangeNotifierProvider(create: (context) => ThemeModel()),
-      ],
-      child: Consumer<ThemeModel>(
-        builder: (context, themeModel, child) {
-          return MaterialApp(
-            debugShowCheckedModeBanner: false,
-            theme: AppTheme.lightTheme,
-            darkTheme: AppTheme.darkTheme,
-            themeMode: themeModel.themeMode,
-            home: const MyCounterHome(),
-          );
-        },
+    return MaterialApp(
+      title: 'HTTP API Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
+      home: const ProductScreen(),
     );
   }
 }

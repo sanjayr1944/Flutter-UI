@@ -1,11 +1,11 @@
 {
-    "name": "demo_test",
-    "short_name": "demo_test",
+    "name": "demo_http",
+    "short_name": "demo_http",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Just Flutter Basic Widget",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
