@@ -1,6 +1,6 @@
-# demo_test
+# firebase_app
 
-Just Flutter Basic Widget
+A new Flutter project.
 
 ## Getting Started
 
